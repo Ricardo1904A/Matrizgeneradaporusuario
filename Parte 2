@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int f, c;
+    printf("Ingrese el numero de filas que desea en la matriz: ");
+    scanf("%d", &f);
+    
+    printf("Ingrese el numero de columnas que desea en la matriz: ");
+    scanf("%d", &c);
+    
+    int matriz[f][c];
+     
+     for (int i = 0; i < f; i++) {  // se iguala las filas a 0 usando un ciclo repetitivo for 
+        
+        for (int j = 0; j < c; j++) {  // se iguala las columnas a 0 usando un ciclo repetitivo for 
+            
+            matriz[i][j] = 0;
+        }
+    }
+    printf("Matriz\n"); // Se muestra la matriz igualada todos sus terminos a 0
+    
+    for (int i = 0; i < f; i++) {
+        
+        for (int j = 0; j < c; j++) {
+           
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
